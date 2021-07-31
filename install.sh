@@ -6,6 +6,7 @@ curl -L https://raw.githubusercontent.com/moondev/vmtoolsd-arm64/main/open-vm-to
 
 dpkg -i open-vm-tools-dev_11.3.0-1_arm64.deb
 # dpkg -r open-vm-tools-dev
+ldconfig -v
 
 cat > /etc/systemd/system/vmtoolsd.service << EOF
 [Unit]
